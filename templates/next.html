@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Customized Playlist</title>
+</head>
+
+<style>
+p {text-align: center; color: mediumaquamarine;}
+</style>
+
+<body>
+<form method = "POST" name = "playlist">
+    {% if error %}
+    <p>No playlist found.</p>
+    {% endif %}
+<p>Please enter user and playlist information below</p>
+
+<div style="text-align: center;">
+<input type="text"  maxlength="100" size="25" name = "" style="border: solid cadetblue 2px" placeholder="Username"/>
+<input type="text"  maxlength="100" size="25" name = "" style="border: solid cadetblue 2px" placeholder="Playlist ID You Like"/>
+<input type="text"  maxlength="100" size="25" name = "" style="border: solid cadetblue 2px" placeholder="Playlist ID You Don't Like"/>
+<input type="text"  maxlength="100" size="25" name = "" style="border: solid cadetblue 2px" placeholder="Playlist ID You Want Recommendations From"/>
+</div>
+<br>
+<div style="text-align: center;">
+<input type = "submit" value="Customize Playlist"/>
+</div>
+</form>
+</body>
+</html>
